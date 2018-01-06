@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gotham-Book.ttf">
+            <string>GothamBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="itemCell" id="TjJ-bn-xUp" customClass="ItemCell" customModule="TestIOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="207"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="207"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="200" verticalHuggingPriority="200" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="guL-ry-qCI">
+                        <rect key="frame" x="0.0" y="0.0" width="172" height="155.5"/>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="755" verticalCompressionResistancePriority="755" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="NAMA ITEM" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-zr-h4G">
+                        <rect key="frame" x="-5" y="169.5" width="182" height="38"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="GothamBook" family="Gotham Book" pointSize="10"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="K2e-zr-h4G" firstAttribute="top" secondItem="guL-ry-qCI" secondAttribute="bottom" constant="14" id="6jc-kF-m7j"/>
+                <constraint firstAttribute="bottom" secondItem="K2e-zr-h4G" secondAttribute="bottom" id="9ET-Kf-cGG"/>
+                <constraint firstItem="guL-ry-qCI" firstAttribute="width" secondItem="TjJ-bn-xUp" secondAttribute="width" id="Hu0-1I-KlQ"/>
+                <constraint firstItem="guL-ry-qCI" firstAttribute="height" secondItem="TjJ-bn-xUp" secondAttribute="height" multiplier="0.75" id="PXP-0e-fM5"/>
+                <constraint firstItem="guL-ry-qCI" firstAttribute="top" secondItem="TjJ-bn-xUp" secondAttribute="top" id="THQ-8e-t3j"/>
+                <constraint firstAttribute="trailing" secondItem="guL-ry-qCI" secondAttribute="trailing" id="UxR-er-RfC"/>
+                <constraint firstItem="guL-ry-qCI" firstAttribute="leading" secondItem="TjJ-bn-xUp" secondAttribute="leading" id="Wdm-zN-cSo"/>
+                <constraint firstItem="K2e-zr-h4G" firstAttribute="leading" secondItem="TjJ-bn-xUp" secondAttribute="leading" constant="-5" id="X1d-b6-XTh"/>
+                <constraint firstAttribute="trailing" secondItem="K2e-zr-h4G" secondAttribute="trailing" constant="-5" id="ssG-cl-ZRW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="OXG-GO-gt7"/>
+            <size key="customSize" width="67" height="116"/>
+            <connections>
+                <outlet property="picture" destination="guL-ry-qCI" id="qNu-yP-Ccc"/>
+                <outlet property="title" destination="K2e-zr-h4G" id="Q4C-4p-pRa"/>
+            </connections>
+            <point key="canvasLocation" x="-12" y="-16.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
